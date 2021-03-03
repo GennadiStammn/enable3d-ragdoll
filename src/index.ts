@@ -67,16 +67,16 @@ export class RagDoll extends Scene3D {
     })
 
     this.physics.add.constraints.pointToPoint(torso.body, leftUpperLeg.body, {
-      pivotA: { z: 2.2, x: -0.4 },
-      pivotB: { z: 0.5 }
+      pivotA: { z: 1.2, x: -0.4 },
+      pivotB: { z: -0.5 }
     })
     this.physics.add.constraints.pointToPoint(leftUpperLeg.body, leftUnderLeg.body, {
       pivotA: { z: 0.55 },
       pivotB: { z: -0.55 }
     })
     this.physics.add.constraints.pointToPoint(torso.body, rightUpperLeg.body, {
-      pivotA: { z: 2.2, x: 0.4 },
-      pivotB: { z: 0.5 }
+      pivotA: { z: 1.2, x: 0.4 },
+      pivotB: { z: -0.5 }
     })
     this.physics.add.constraints.pointToPoint(rightUpperLeg.body, rightUnderLeg.body, {
       pivotA: { z: 0.55 },
